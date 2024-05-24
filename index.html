@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <title>Travel_Sched</title>
+</head>
+<body>
+<h2>Travel Schedule</h2>
+
+<div class="container">
+    <!-- Form -->
+    <form id="add-row-form">
+        <img src="/img/icon1.png" alt="Date">
+        <input type="date" id="date-input" placeholder="MM/DD/YYYY" required>
+        
+        <img src="/img/icon2.png" alt="Destination">
+        <input type="text" id="destination-input" placeholder="Destination" required>
+        
+        <img src="/img/icon3.png" alt="Transportation">
+        <input type="text" id="transportation-input" placeholder="Transportation" required>
+        
+        <img src="/img/icon4.png" alt="Notes">
+        <input type="text" id="notes-input" placeholder="Notes">
+        
+        <button type="submit">Add Row</button>
+    </form>
+    <!-- Table -->
+    <table id="schedule-table">
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>Destination</th>
+                <th>Transportation</th>
+                <th>Notes</th>
+                <th>Actions</th> <!-- Added a new header for Actions -->
+            </tr>
+        </thead>
+        <tbody id="schedule-body">
+        </tbody>
+    </table>
+    <!-- Remove all rows button -->
+    <button id="remove-all-btn">Remove All Rows</button>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
